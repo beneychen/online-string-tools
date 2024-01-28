@@ -1,0 +1,27 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Line Breaker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Line Breaker</h1>
+        <form id="lineBreakerForm">
+            <label for="article">Enter Article:</label>
+            <textarea id="article" rows="10" cols="50" oninput="updatePreview()"></textarea>
+            <button type="button" onclick="breakLines()">Break Lines</button>
+        </form>
+        <div>
+            <label for="output">Result:</label>
+            <textarea id="output" rows="10" cols="50" readonly></textarea>
+            <button onclick="copyToClipboard()">Copy to Clipboard</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
